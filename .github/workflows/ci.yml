@@ -1,0 +1,17 @@
+name: HTML CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout projet
+        uses: actions/checkout@v4
+
+      - name: Afficher fichiers
+        run: ls
